@@ -1,0 +1,200 @@
+body {  
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+    @media (max-width: 1000px) {
+        font-size: 35px;
+    }
+    
+    }
+    
+}
+h3 {
+    font-size: 42px;
+    @media (max-width: 1000px) {
+        font-size: 32px;
+    }
+}
+h4 {
+    font-size: 40px;
+    @media (max-width: 1000px) {
+        font-size: 30px;
+    }
+}
+h2, h3, h4 {
+    font-weight: 200;
+    margin-top: 0px;
+    letter-spacing: 1px
+}
+span {
+        font-weight: 900;
+}
+.span {
+    display: block;
+}
+p {
+    font-size: 15.57px;
+    line-height: 28px;
+    @media (max-width: 1000px) {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+a, input, textarea {
+    font-size: 16.57px;
+    @media (max-width: 1000px) {
+        font-size: 13px;
+    }
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 15px 0px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 50px;
+    max-width: 210px;
+    text-align: center;
+}
+.grid-bg3>a {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    
+}
+.form {
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form textarea {
+    width: 100%;
+    min-height: 121px;
+}
+.form input {
+    width: 43%;
+}
+.form textarea, .form input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 18px 15px;
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {color: #ffffff;}
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {color: #fffbff;}
+.form input:-moz-placeholder, .form textarea:-moz-placeholder {color: #ffffff;}
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {color: #ffffff;}
+
+button {
+    display: block;
+    background-image: url(../img/menu.svg);
+    height: 33px;
+    width: 33px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 65px;
+    @media (max-width: 1000px) {
+        margin-bottom: 30px;
+    }
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+.list>li{
+    margin-right: 10px;
+}
+.list>li>a {
+background-size: 99%;
+background-repeat: no-repeat;
+width: 45px;
+height: 45px;
+border: none;
+margin-top: 0;
+}
+.list-fb{
+    background-image: url(../img/Facebook.svg);
+}
+.list-dr{
+    background-image: url(../img/dribble.svg);
+}
+.list-tw{
+    background-image: url(../img/twitter.svg);
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "a a a a a a b b b"
+                         "c c c c d d d d d"
+                         "c c c c e e e e e"
+                         "f f f g g g g g g"
+}
+.grid-bg1 {
+    background-image: url(../img/bg1.png);
+    grid-area: a;
+}
+.Ali-sayd {
+    background-color: #f2f2f2;
+    grid-area: b;
+}
+.grid-bg2 {
+    background-image: url(../img/bg2.png);
+    grid-area: c;
+}
+.grid-bg3 {
+    background-image: url(../img/bg3.png);
+    grid-area: d;
+}
+.grid-bg4 {
+    background-image: url(../img/bg4.png);
+    grid-area: e;
+}
+.grid-bg5 {
+    background-image: url(../img/bg5.png);
+    grid-area: f;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 715px;
+}
+.grid-bg6 {
+    background-image: url(../img/bg6.png);
+    grid-area: g;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 715px;
+}
+.grid-bg1, .grid-bg2, .grid-bg3, .grid-bg4, .grid-bg5, .grid-bg6 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.grid-bg2>div{
+    margin-bottom: 70px;
+}
+.Ali-sayd, .grid-bg2, .grid-bg3, .grid-bg4, .grid-bg5, .grid-bg6 {
+    padding: 60px 55px 70px 55px;
+}
+.grid-bg2, .grid-bg4, .grid-bg5, .grid-bg6 {
+    color: #ffffff;
+}
+
+}
