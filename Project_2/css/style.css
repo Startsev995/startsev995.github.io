@@ -1,0 +1,412 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border;
+	-moz-box-sizing: border;
+	-box-sizing: border;
+}
+
+h1 { 
+	font: 100%/1.5em;
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+	color: #676666;
+	text-align: center;
+	font-weight: 400;
+}
+
+h1 >span {
+	color: #ff7700 ;
+}
+
+h2, p { 
+	font-family: 'Roboto', sans-serif;
+}
+
+menu p {
+	font-size: 1em;
+	padding: 12% 0%;
+	color: #5e5e5e;
+}
+
+h2 {
+	color: #565555;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+	height: auto;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(224,224,224,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0 );
+	border-bottom: 1px solid #cccccc; 
+}
+
+.mainText {
+	padding: 4% 6% 3% 0%;
+}
+ 
+menu {
+	height: auto;
+	display: flex;
+	padding: 0% 36% 0% 10%;
+}
+
+menu li {
+	display: block;
+	text-decoration: none;
+	padding: 13% 8% 4% 8%;
+	width: 109px;
+}
+
+ 
+menu li:hover {
+	border-bottom: 4px solid #ff7d00;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(202,194,194,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cac2c2', GradientType=0 );
+}
+
+
+.menuGallary {
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	padding-bottom: 0px;
+}
+
+.menuMembers {
+	border-right: 1px solid #cccccc;
+	padding: 12% 6% 0% 5%;
+}
+.menuHome {
+	padding-bottom: 0px;
+}
+
+.menuLogout{
+	padding-bottom: 0px;
+}
+
+}
+main {
+}
+
+main >h2{
+	text-align: center;
+	font-size: 1.75em;
+	padding-top: 40px;
+	padding-bottom: 26px; 
+}
+
+#addImages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.browseFile {
+  padding-left: 7%;
+  position: relative;
+  width: 35%;
+  height: auto;
+  margin: 5px;
+}
+
+.browseFile >#buttonAddImage {
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+
+.browseFile >.file-text {
+	padding: 5px;
+	width: 90%;
+	height: 40px;
+	border: 1px solid #e2dada;
+	border-radius: 6px;
+	overflow: hidden;
+	text-overflow: clip;
+	white-space: normal;
+	font-size: xx-large;
+	box-shadow: inset -1px 10px 5px -6px rgba(226,218,218,0.91);
+}
+
+.browseFile >.file-button {
+	position: absolute;
+  top: 21%;
+  right: 8%;
+  width: 95px;
+  height: 35px;
+  background-color: #c1bfbf;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  font-size: 1.125em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.file-button >p {
+	padding-top: 6px;
+}
+
+.button-upload-image {
+	cursor: pointer;
+	width: 210px;
+	height: 50px;
+	margin-left: -22px;
+	border-radius: 6px;
+	background: rgba(255,164,0,1);
+	background: -moz-linear-gradient(top, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,164,0,1)), color-stop(100%, rgba(255,103,0,1)));
+	background: -webkit-linear-gradient(top, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', endColorstr='#ff6700', GradientType=0 );
+}
+
+.button-upload-image >h2 {
+	color: white;
+	padding: 10px 30px;
+}
+
+#grid-images {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 30px;
+	padding: 65px 145px;
+	height: auto;
+	width: 77%;
+}
+
+#grid-images >div {
+	box-shadow: 0px 2px 8px 1px rgba(214,214,214,0.98), inset 0px -31px 18px -23px rgba(214,214,214,0.52);
+	width: 221px;
+	height: 285px;
+	border: 1px solid #d6d6d6;
+}
+
+#grid-images img {
+	padding: 9px;
+}
+
+#grid-images p {
+	font-size: 15px;
+	color: #9e9a9a
+}
+
+#select_image {
+	width: 205px;
+	height: 197px;
+	z-index: 1;
+}
+
+#zoom {
+	position: relative;
+	top: -210px;
+	left: 9px;
+	width: 203px;
+	height: 197px;
+	background: transparent;
+  z-index: 2;
+  opacity: 0;
+}
+
+#zoom img{
+	margin: 80px;
+}
+
+#zoom:hover {
+	opacity: 1;
+}
+
+.border-like {
+	display: flex;
+	padding-top: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#image-like {
+	padding-left: 11px;
+}
+
+#image-like:active {
+	opacity: 0;
+}
+
+.block-share {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 93%;
+	margin: -7px 0px 0px 8px;
+	padding-top: 6px;
+	border-top: 1px solid #e0dfdf;
+}
+
+.block-share li {
+	display: block;
+  background-color: #b1aeae;
+  border-radius: 20px;
+  width: 22px;
+  height: 22px;
+  box-shadow: inset 0px 0px 4px 2px rgba(151,149,149,1);
+}
+
+li img {
+	margin: -5px -3px;
+
+}
+
+.block-share p{
+	margin-right: 14px;
+}
+
+#image-twitter {
+	margin: 2px;
+}
+
+#image-facebook {
+	margin: 2px;
+}
+
+#image-layer18 {
+	margin: 2px;	
+}
+
+#image-tumblr {
+	margin: 2px;
+}
+
+#image-twitter:hover {
+	background-color: #283e8f;
+	box-shadow: none;
+}
+
+#image-facebook:hover {
+	background-color: #283e8f;
+	box-shadow: none;
+}
+
+#image-layer18:hover {
+	background-color: #283e8f;
+	box-shadow: none;
+}
+
+#image-tumblr:hover {
+	background-color: #283e8f;
+	box-shadow: none;
+}
+
+footer {
+text-align: right;
+padding: 0 12% 4% 0;
+}
+
+footer h3{
+  font-size: 17px;
+  color: #8b8a8a;
+  font-weight: normal;
+  font: icon;
+}
+
+
+
+@media screen and (max-width: 1067px) {
+	#grid-images {
+	display: grid;
+	grid-template: auto/auto auto auto;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 30px;
+	padding: 65px 145px;
+	height: auto;
+	width: 79%;
+}
+
+@media screen and (max-width: 860px) {
+	#grid-images {
+	display: grid;
+	grid-template: auto/auto auto;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 30px;
+	padding: 65px 145px;
+	height: auto;
+	width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+header {
+	display: grid;
+	grid-template: 50%/100%;
+	text-align: center;
+	height: 235px;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(224,224,224,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0 );
+}
+
+menu {
+	height: 118px;
+	display: flex;
+	padding: 0 36% 0 0;
+}
+
+#addImages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-flow: column;
+}
+
+.browseFile {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+	#grid-images {
+	display: grid;
+	grid-template: auto/auto;
+	height: auto;
+	width: 100%;
+	padding: 0;
+	padding-top: 65px;
+}
+
+.button-upload-image {
+	margin-left: 0;
+}
