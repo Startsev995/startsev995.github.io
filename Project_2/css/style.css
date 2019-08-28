@@ -64,7 +64,7 @@ menu {
 	padding: 0% 36% 0% 10%;
 }
 
-menu li {
+menu a {
 	display: block;
 	text-decoration: none;
 	padding: 13% 8% 4% 8%;
@@ -72,7 +72,7 @@ menu li {
 }
 
  
-menu li:hover {
+menu a:hover {
 	border-bottom: 4px solid #ff7d00;
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
@@ -268,7 +268,7 @@ main >h2{
 	border-top: 1px solid #e0dfdf;
 }
 
-.block-share li {
+li {
 	display: block;
   background-color: #b1aeae;
   border-radius: 20px;
@@ -347,7 +347,6 @@ footer h3{
 	height: auto;
 	width: 79%;
 }
-}
 
 @media screen and (max-width: 860px) {
 	#grid-images {
@@ -359,7 +358,6 @@ footer h3{
 	padding: 65px 145px;
 	height: auto;
 	width: 50%;
-}
 }
 
 @media screen and (max-width: 800px) {
@@ -381,7 +379,7 @@ header {
 menu {
 	height: 118px;
 	display: flex;
-	padding: 0 36% 0 0;
+	padding: 0% 36% 5% 9%;
 }
 
 #addImages {
@@ -398,7 +396,6 @@ menu {
   height: auto;
   margin-bottom: 15px;
 }
-}
 
 @media screen and (max-width: 650px) {
 	#grid-images {
@@ -412,5 +409,4 @@ menu {
 
 .button-upload-image {
 	margin-left: 0;
-}
 }
