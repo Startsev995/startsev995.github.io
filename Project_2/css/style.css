@@ -27,6 +27,14 @@ h2 {
 	color: #565555;
 }
 
+li {
+	list-style-type: none;
+}
+
+ul {
+	display: inherit;
+}
+
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -36,7 +44,7 @@ header {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	text-align: center;
-	height: auto;
+	height: 103px;
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(224,224,224,1)));
@@ -49,7 +57,9 @@ header {
 }
 
 .mainText {
-	padding: 4% 6% 3% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
  
 menu p {
@@ -61,13 +71,14 @@ menu p {
 menu {
 	height: auto;
 	display: flex;
-	padding: 0% 36% 0% 10%;
+  padding: 0 10%;
 }
 
-menu li {
+
+menu a {
 	display: block;
 	text-decoration: none;
-	padding: 13% 8% 4% 8%;
+	padding: 36px 0;
 	width: 109px;
 }
 
@@ -84,62 +95,17 @@ menu li:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cac2c2', GradientType=0 );
 }
 
-.mainText {
-	padding: 4% 6% 3% 0%;
+.menuGallary, .menuMembers, .menuHome, .menuLogout {
+	padding-bottom: 0px;
 }
-
-menu {
-	height: auto;
-	display: flex;
-}
- 
-menu p {
-	font-size: 1em;
-	padding: 12% 0%;
-	color: #5e5e5e;
-}
-
-menu li {
-	display: block;
-	text-decoration: none;
-	padding: 13% 8% 4% 8%;
-	width: 109px;
-}
-
- 
-menu li:hover {
-	border-bottom: 4px solid #ff7d00;
-	background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(202,194,194,1)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cac2c2', GradientType=0 );
-}
-
 
 .menuGallary {
 	border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;
-	padding-bottom: 0px;
 }
 
 .menuMembers {
 	border-right: 1px solid #cccccc;
-	padding: 12% 6% 0% 5%;
-}
-.menuHome {
-	padding-bottom: 0px;
-}
-
-.menuLogout{
-	padding-bottom: 0px;
-}
-
-}
-main {
 }
 
 main >h2{
@@ -196,7 +162,6 @@ main >h2{
   color: white;
   text-align: center;
   font-size: 1.125em;
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -205,6 +170,9 @@ main >h2{
 }
 
 .button-upload-image {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
 	cursor: pointer;
 	width: 210px;
 	height: 50px;
@@ -218,11 +186,8 @@ main >h2{
 	background: -ms-linear-gradient(top, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,164,0,1) 0%, rgba(255,103,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', endColorstr='#ff6700', GradientType=0 );
-}
-
-.button-upload-image >h2 {
-	color: white;
-	padding: 10px 30px;
+	border: none;
+	outline: none;
 }
 
 #grid-images {
@@ -253,7 +218,7 @@ main >h2{
 	color: #9e9a9a
 }
 
-#select_image {
+#select_image-1, #select_image-2, #select_image-3, #select_image-4, #select_image-5, #select_image-6, #select_image-7, #select_image-8, #select_image-9, #select_image-10, #select_image-11, #select_image-12 {
 	width: 205px;
 	height: 197px;
 	z-index: 1;
@@ -268,6 +233,10 @@ main >h2{
 	background: transparent;
   z-index: 2;
   opacity: 0;
+}
+
+#zoom:active{
+
 }
 
 #zoom img{
@@ -371,6 +340,7 @@ footer h3{
 
 
 
+
 @media screen and (max-width: 1067px) {
 	#grid-images {
 	display: grid;
@@ -414,7 +384,7 @@ header {
 menu {
 	height: 118px;
 	display: flex;
-	padding: 0 36% 0 0;
+  justify-content: center;
 }
 
 #addImages {
