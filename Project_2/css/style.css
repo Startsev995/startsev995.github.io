@@ -51,6 +51,42 @@ header {
 .mainText {
 	padding: 4% 6% 3% 0%;
 }
+ 
+menu p {
+	font-size: 1em;
+	padding: 12% 0%;
+	color: #5e5e5e;
+}
+
+menu {
+	height: auto;
+	display: flex;
+	padding: 0% 36% 0% 10%;
+}
+
+menu li {
+	display: block;
+	text-decoration: none;
+	padding: 13% 8% 4% 8%;
+	width: 109px;
+}
+
+ 
+menu li:hover {
+	border-bottom: 4px solid #ff7d00;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(202,194,194,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(202,194,194,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cac2c2', GradientType=0 );
+}
+
+.mainText {
+	padding: 4% 6% 3% 0%;
+}
 
 menu {
 	height: auto;
