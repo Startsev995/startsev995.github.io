@@ -1,0 +1,531 @@
+@font-face {
+font-family: 'Geometria Bold';
+src: url('../fonts/Geometria-Bold.eot');
+src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Geometria-Bold.woff') format('woff'),
+url('../fonts/Geometria-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Geometria Regular';
+src: url('../fonts/Geometria.eot');
+src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Geometria.woff') format('woff'),
+url('../fonts/Geometria.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Geometria Medium';
+src: url('../fonts/Geometria-Medium.eot');
+src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Geometria-Medium.woff') format('woff'),
+url('../fonts/Geometria-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Geometria Italic';
+src: url('../fonts/Geometria-Italic.eot');
+src: url('../fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Geometria-Italic.woff') format('woff'),
+url('../fonts/Geometria-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Geometria Regular';
+  color: #171717;
+  line-height: 25px;
+}
+
+a {
+  color: #171717;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Geometria Medium';
+}
+
+h2, h3, h4 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input {
+  font-family: 'Geometria Medium';
+  font-size: 20px;
+  outline:none;
+}
+
+/* HEADER START */
+
+.header {
+  background-color: transparent;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1341px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  position: relative;
+  padding-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* START FORM CALL BACK */
+
+.form__call-back {
+  display: none;
+  position: absolute;
+  left: 30%;
+  top: 150%;
+  max-width: 565px;
+  height: 380px;
+  color: #fff;
+  background: linear-gradient(89.28deg, #00B2FF 12.71%, #009EE1 99.55%);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.heading__call-back {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.close_form {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+}
+
+.form__call-back__wrapper {
+  margin-left: 71px;
+}
+
+.form__call-back__wrapper {
+  margin-top: 41px;
+}
+
+.form__call-back__input {
+  margin: 24px auto;
+}
+
+.form__call-back__input >input {
+  margin-bottom: 12px;
+  padding-left: 41px;
+  width: 380px;
+  height: 50px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  color: #868686;
+}
+
+#form_call-back_button {
+  width: 207px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  background: #171717;
+  margin-left: 108px;
+}
+
+/* END FORM CALL BACK */
+
+/* START MENU */
+
+.header__menu {
+  margin-right: 28px;
+}
+
+.header__menu__hide {
+  display: none;
+  margin-right: 28px;
+}
+
+.header__menu__open {
+  display: none;
+  width: 320px;
+  height: 385px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  top: 93px;
+}
+
+.header__menu__open__link > a:hover, .header__menu__open__services__link > a:hover {
+  font-family: 'Geometria Regular';
+  color: #00B2FF;
+  text-decoration: underline;
+}
+
+.header__menu__open__link {
+  margin-left: 52px;
+  margin-top: 13px;
+}
+
+.header__menu__open__link:first-child {
+  margin-top: 37px;
+}
+
+.header__menu__open__services__link:first-child {
+  margin-top: 14px;
+}
+
+.header__menu__open__services__link {
+  font-family: 'Geometria Regular';
+  margin-left: 14px;
+  font-size: 18px;
+}
+
+
+/* END MENU */
+
+
+.header__send {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.header__telefone {
+  font-size: 26px;
+}
+
+#header__send__button {
+ width: 240px;
+ height: 50px;
+ background: transparent;
+ border: 2px solid #171717;
+ box-sizing: border-box;
+ box-shadow: 0px 0px 20px rgba(0, 178, 255, 0.5);
+ border-radius: 35px;
+ font-family: 'Geometria Medium';
+ font-size: 20px;
+ color: #171717;
+ margin-left: 28px;
+}
+
+/* END HEADER */
+
+.bread__crumbs {
+ font-size: 14px;
+ color: #171717;
+ margin-top: 71px;
+}
+
+.bread__crumbs >span {
+ color: #8E8E8E;
+}
+
+/* START town */
+
+.town {
+ margin-top: 38px;
+ position: relative;
+ width: 425px;
+ z-index: 0;
+}
+
+.town__button__syktyvkar {
+ max-width: 190px;
+ height: 50px;
+ z-index: 2;
+}
+
+.button__syktyvkar {
+ padding: 10px 39px;
+ border: 1px solid #C4C4C4;
+ border-radius: 35px;
+ color: #C4C4C4;
+ text-align: center;
+ background: #fff;
+}
+
+.button__syktyvkar.active {
+ padding: 12px 39px;
+ border: none;
+ border-radius: 35px;
+ color: #fff;
+ text-align: center;
+ background: #00B2FF;
+}
+
+.town__button__petersburg {
+ position: absolute;
+ top: 0;
+ left: 35%;
+ z-index: -1;
+}
+
+.button__petersburg {
+ padding: 12px 39px 10px 50px;
+ border: 1px solid #C4C4C4;
+ border-radius: 35px;
+ color: #C4C4C4;
+ text-align: center;
+ background: #fff;
+}
+
+.button__petersburg.active {
+ padding: 12px 39px 10px 50px;
+ border: none;
+ border-radius: 35px;
+ color: #fff;
+ text-align: center;
+ background: #00B2FF;
+}
+
+.address__syktyvkar, .address__petersburg {
+ margin-top: 51px;
+ max-width: 385px;
+ font-style: normal;
+}
+
+.address__petersburg {
+  display: none;
+}
+
+.address__syktyvkar >p >span, .address__petersburg >p >span {
+ color: #C4C4C4;
+}
+
+.address__phone {
+  font-weight: bold;
+}
+
+.address__e-mail {
+  margin-top: 16px;
+}
+
+.address__address {
+  margin-top: 21px;
+}
+
+.address__social__networks {
+  margin-top: 35px;
+  margin-bottom: 51px;
+}
+
+.address__social__networks >img {
+  margin-right: 16px;
+}
+
+.address__map {
+  overflow:hidden;
+  max-width: 770px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 570px;
+}
+
+#gmap_canvas img{max-width:none!important;background:none!important}
+
+/* END town */
+
+ .background-black {
+   background-color: #121212;
+ }
+
+ .brif {
+   width: 425px;
+   padding-top: 59px;
+   padding-bottom: 49px;
+ }
+
+ .brif__button {
+   margin-top: 14px;
+   width: 310px;
+   height: 60px;
+   border: 2px solid #5C5C5C;
+   padding: 19px auto;
+   font-size: 18px;
+   box-sizing: border-box;
+   border-radius: 50px;
+   color: #5C5C5C;
+   background: transparent;
+ }
+
+ .brif__button:hover {
+   border: 2px solid #FFFFFF;
+   color: #fff;
+ }
+
+ .footer {
+   background-color: #0E0E0E;
+   min-height: calc(100vh - 764px);
+   position: relative;
+ }
+
+ .processing-policy {
+   padding-top: 42px;
+   padding-bottom: 54px;
+   color: #5C5C5C;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+ }
+
+ .processing {
+   max-width: 336px;
+   margin-right: 64px;
+ }
+
+ .processing__text, .policy__text {
+   font-size: 14px;
+ }
+
+ .policy {
+   margin-top: 10px;
+   max-width: 232px;
+ }
+
+ .processing__link, .policy__link {
+   color: #00B2FF;
+   text-decoration: underline;
+ }
+
+ .after {
+   margin-left: auto;
+   margin-top: 20px;
+   color: #5C5C5C;
+   font-size: 20px;
+ }
+ /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+ @media screen and (min-width : 320px) and (max-width : 480px) {
+  html {
+    font-size: 14px;
+  }
+
+   .header__send {
+     display: none;
+   }
+
+   .project__all__link {
+     font-size: 1.3rem;
+   }
+
+   .town__button__syktyvkar {
+     max-width: 120px;
+   }
+
+   .button__syktyvkar {
+     font-size: 1rem;
+     padding: 9px 20px;
+   }
+
+   .button__petersburg{
+     font-size: 1rem;
+     padding: 10px 20px 8px 40px;
+   }
+
+   .button__syktyvkar.active {
+     padding: 10px 20px;
+   }
+
+   .button__petersburg.active {
+      padding: 10px 20px 10px 40px;
+    }
+
+   .town__button__petersburg {
+     left: 20%;
+   }
+
+   .address__map {
+     display: none;
+   }
+
+
+ }
+ /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+ @media screen and (min-width : 480px) and (max-width : 768px) {
+   html {
+     font-size: 16px;
+   }
+
+   .form__call-back {
+     left: 0%;
+     top: 150%;
+     max-width: 565px;
+     height: 380px;
+   }
+
+   .form__call-back__input >input {
+     width: auto;
+   }
+
+  .header__telefone {
+      font-size: 1rem;
+    }
+
+  .address__map {
+    display: none;
+    }
+ }
+ /* iPads (вертикальная и горизонтальная) ----------- */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+   .form__call-back {
+     left: 18%;
+   }
+
+   iframe {
+     width: 340px;
+     height: 280px;
+     }
+
+     .address__map {
+       left: 100%;
+       top: 25%;
+     }
+ }
+ /* ноутбуки ----------- */
+ @media screen and (min-width: 1024px)  and (max-width: 1342px) {
+  .form__call-back {
+    left: 25%;
+  }
+
+  .address__map {
+    max-width: 770px;
+    max-height: 680px;
+ }
