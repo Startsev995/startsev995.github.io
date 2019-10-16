@@ -65,12 +65,12 @@
 
     <main class="main">
       <div class="wrapper">
-        <div id="nav__namber"></div>
+        <div id="nav__namber"><h4>01/<span>04</span></h4></div>
         <h1 class="main__text">Полезные вещи <br /> для вашего бизнеса</h1>
 
         <nav class="main__navigation">
             <ul class="main__navigation__list">
-                <li class="main__navigation__item" id="website-development">
+                <li class="main__navigation__item active" id="website-development">
                   Разработка сайтов
                 </li>
                 <li class="main__navigation__item" id="website-promotion">
@@ -101,8 +101,8 @@
     <div class="wrapper">
       <div class="header__menu__open">
         <ul class="header__menu__open__list">
-          <li class="header__menu__open__link"><a href="index.html">Главаня</a></li>
-          <li class="header__menu__open__link"><a href="#">Услуги</a>
+          <li class="header__menu__open__link"><a href="index.html">Главная</a></li>
+          <li class="header__menu__open__link"><p>Услуги</p>
             <ul class="header__menu__open__services__list">
               <li class="header__menu__open__services__link"><a href="site_development.html">Разработка сайтов</a></li>
               <li class="header__menu__open__services__link"><a href="website_promotion.html">Продвижение сайтов</a></li>
@@ -110,7 +110,7 @@
               <li class="header__menu__open__services__link"><a href="logo_development.html">Разработка логотипа</a></li>
             </ul>
           </li>
-          <li class="header__menu__open__link"><a href="portfolio.html">Партфолио</a></li>
+          <li class="header__menu__open__link"><a href="portfolio.html">Портфолио</a></li>
           <li class="header__menu__open__link"><a href="#">О нас</a></li>
           <li class="header__menu__open__link"><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -123,10 +123,10 @@
       <div class="intro__background">
         <div class="intro">
           <div class="intro__link">
-            <a href="#"></a>
+            <a href="site_development.html">Узнать подробнее о разработке сайтов</a>
             <img src="img/index-intro-vector.png" alt="Vector">
           </div>
-          <div id="link__image__shadow"></div>
+          <div id="link__image__shadow" class="website-development"></div>
         </div>
       </div>
 
@@ -135,50 +135,91 @@
       <article>
         <div class="container__project">
           <div class="container__project__list">
-            <img src="img/1.png" alt="biarma" /><br />
-            <a href="biarma_project.html">Biarma</a>
+            <a href="biarma_project.html" class="project">
+              <img src="img/1.png" alt="biarma" /><a><br />
+            <a href="biarma_project.html" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Biarma
+              </h4>
+            </a>
             <p>Фирменный стиль для швейной фабрики Biarma</p>
           </div>
           <div class="container__project__list">
-            <img src="img/2.png" alt="Дом дружбы народов" /><br />
-            <a href="#">Дом дружбы народов</a>
+            <a href="#" class="project">
+              <img src="img/2.png" alt="Дом дружбы народов" /></a><br />
+            <a href="#" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Дом дружбы народов
+              </h4>
+            </a>
             <p>Дизайн сайта для Дома дружбы народов</p>
           </div>
           <div class="container__project__list">
-            <img src="img/3.png" alt="Мича" /><br />
-            <a href="#">Мича</a>
+            <a href="micha_project.html" class="project">
+              <img src="img/3.png" alt="Мича" /></a><br />
+            <a href="micha_project.html" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Мича
+              </h4>
+            </a>
             <p>Фирменный стиль для цветочного магазина Мича</p>
           </div>
           <div class="container__project__list">
-            <img src="img/4.png" alt="ЖАКОV" /><br />
-            <a href="#">ЖАКОV</a>
+            <a href="jakov_project.html" class="project">
+              <img src="img/4.png" alt="ЖАКОV" /></a><br />
+            <a href="jakov_project.html" class="project__heading__text">
+              <h4 class="project__heading__text">
+                ЖАКОV
+              </h4>
+            </a>
             <p>Фирменный стиль для ресторана ЖАКОV</p>
           </div>
           <div class="container__project__list">
-            <img src="img/5.png" alt="Дом" /><br />
-            <a href="#">Дом</a>
+            <a href="#" class="project">
+              <img src="img/5.png" alt="Дом" /></a><br />
+            <a href="#" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Дом
+              </h4>
+            </a>
             <p>Дизайн и разработка сайта Дом</p>
           </div>
           <div class="container__project__list">
-            <img src="img/6.png" alt="Красный Кроль" /><br />
-            <a href="#">Красный Кроль</a>
+            <a href="red-crawl.html" class="project">
+              <img src="img/6.png" alt="Красный Кроль" /></a><br />
+            <a href="red-crawl_project.html" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Красный Кроль
+              </h4>
+            </a>
             <p>Фирменный стиль магазина сувениров Красный Кроль</p>
           </div>
           <div class="container__project__list">
-            <img src="img/7.png" alt="Alpha Dent" /><br />
-            <a href="#">Alpha Dent</a>
+            <a href="alpha-dent_project.htm" class="project">
+              <img src="img/7.png" alt="Alpha Dent" /></a><br />
+            <a href="alpha-dent_project.html" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Alpha Dent
+              </h4>
+            </a>
             <p>Фирменный стиль для стоматологии  Alpha Dent</p>
           </div>
           <div class="container__project__list">
-            <img src="img/8.png" alt="Ежевика" /><br />
-            <a href="#">Ежевика</a>
+            <a href="#" class="project">
+              <img src="img/8.png" alt="Ежевика" /></a><br />
+            <a href="#" class="project__heading__text">
+              <h4 class="project__heading__text">
+                Ежевика
+              </h4>
+            </a>
             <p>Дизайн сайта для студии по организации свадеб Ежевика</p>
           </div>
         </div>
 
         <div class="project__all">
           <a href="portfolio.html" class="project__all__link">Смотреть все работы
-            <img src="img/svg/keyboard-right-arrow-button.svg" alt="keyboard-right-arrow-button">
+            <img src="img/svg/keyboard-right-arrow-button.svg" alt="right" class="vector-right">
+            <img src="img/svg/keyboard-right-arrow-button-color.svg" alt="right-color" class="vector-right-color">
           </a>
 
           <form name="user-project" method="post" id="form__send__project">
@@ -193,6 +234,7 @@
                   <button type="button" name="send-button" id="form_send_project_button">Отправить заявку</button>
                 </div>
               </div>
+              <div class="pottern"></div>
             </form>
           </div>
         </article>

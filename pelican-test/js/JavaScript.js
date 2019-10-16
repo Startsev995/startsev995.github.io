@@ -82,19 +82,54 @@ $(document).ready(function(){
     $("#form-call-back").hide("1000");
   });
 
+  // Подчеркивание текста под проектом
+
+  $(".project").hover(function (){
+    $(this).find("~ h4").css("text-decoration", "underline")
+  }, function (){
+    $(this).find("~ h4").css("text-decoration", "none")
+  });
+
+  $(".project").hover(function (){
+    $(this).find("~ a").css("text-decoration", "underline")
+  }, function (){
+    $(this).find("~ a").css("text-decoration", "none")
+  });
+
+  // Меняеться вектор при наведение
+  $(".project__all__link").hover(function (){
+    $(".vector-right").hide();
+    $(".vector-right-color").show();
+  }, function (){
+    $(".vector-right-color").hide();
+    $(".vector-right").show();
+  });
+
+  //Убираем текст с формы проекта при нажатие
+
+  $("#form_send_project_name, #form_send_project_tel-emeil").focus(function (){
+    $(this).val(" ");
+  });
+
   // form-style выпадающий список
 
-    $(".sub-a").on("click",function() {
-      $(this).find("~ .submenu").stop().slideToggle();
-      $(this).find(".image-vector, .image-vector-open").toggle();
+    $('.sub-a').click(function(){
+      $('.submenu').slideUp();
+       if ($(this).next().is(":visible")){
+           $(this).next().slideUp();
+       } else {
+       $(this).next().slideToggle();
+       }
+      return false;
     });
-
-
-  // Маска для телефона
-
-  $(function(){
-    $("#form-request-phone").mask("+7(999) 999-9999");
-  });
+       $('.form-style__item > a').click(function(){
+	   $('.form-style__item > a, .sub-a').removeClass('active');
+	   $(this).addClass('active');
+	}),
+       $('.submenu li').click(function(){
+	   $('.submenu li').removeClass('active');
+	   $(this).addClass('active');
+	});
 
   // Кнопка переключения города
 
@@ -103,12 +138,14 @@ $(document).ready(function(){
     $(".address__petersburg").show();
     $(".button__syktyvkar").removeClass("active");
     $(".button__petersburg").addClass("active");
+    $(".town__button__petersburg").css("z-index", "0");
   });
   $(".button__syktyvkar").click(function (){
     $(".address__syktyvkar").show();
     $(".address__petersburg").hide();
     $(".button__syktyvkar").addClass("active");
     $(".button__petersburg").removeClass("active");
+    $(".town__button__petersburg").css("z-index", "-1")
   });
 
   // При наведение на сойиальные сети
@@ -122,6 +159,12 @@ $(document).ready(function(){
     $(".vk").attr("src", "img/vk-hover.png");
   },function (){
     $(".vk").attr("src", "img/vk.png");
+  });
+
+  // Маска для телефона
+
+  $(function(){
+    $("#form-request-phone").mask("+7(999) 999-9999");
   });
 
 });

@@ -61,6 +61,7 @@ a {
 
 ul {
   list-style: none;
+  list-style-type: none;
 }
 
 h1, h2, h3, h4 {
@@ -110,9 +111,8 @@ button, input {
   position: absolute;
   left: 30%;
   top: 150%;
-  max-width: 565px;
-  height: 380px;
   color: #fff;
+  max-width: 565px;
   background: linear-gradient(89.28deg, #00B2FF 12.71%, #009EE1 99.55%);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -120,7 +120,7 @@ button, input {
 }
 
 .heading__call-back {
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
@@ -134,28 +134,26 @@ button, input {
 
 .form__call-back__wrapper {
   margin-left: 71px;
-}
-
-.form__call-back__wrapper {
-  margin-top: 41px;
+  margin-top: 35px;
 }
 
 .form__call-back__input {
-  margin: 24px auto;
+  margin-top: 30px;
 }
 
 .form__call-back__input >input {
-  margin-bottom: 12px;
-  padding-left: 41px;
+  margin-bottom: 10px;
+  padding: 0 41px;
   width: 380px;
   height: 50px;
   background: #FFFFFF;
-  border: none;
+  border: 0;
   border-radius: 50px;
   color: #868686;
 }
 
 #form_call-back_button {
+  margin: 45px 108px;
   width: 207px;
   height: 50px;
   border: none;
@@ -163,7 +161,6 @@ button, input {
   color: #fff;
   text-align: center;
   background: #171717;
-  margin-left: 108px;
 }
 
 /* END FORM CALL BACK */
@@ -183,14 +180,18 @@ button, input {
   display: none;
   width: 320px;
   height: 385px;
-  background-color: #fff;
+  background-color: #000;
   position: absolute;
   z-index: 3;
   top: 93px;
 }
 
-.header__menu__open__link > a:hover, .header__menu__open__services__link > a:hover {
+.header__menu__open__link > a, .header__menu__open__services__link > a, .header__menu__open__link > p{
   font-family: 'Geometria Regular';
+  color: #fff;
+}
+
+.header__menu__open__link > a:hover, .header__menu__open__services__link > a:hover {
   color: #00B2FF;
   text-decoration: underline;
 }
@@ -230,17 +231,20 @@ button, input {
 }
 
 #header__send__button {
- width: 240px;
- height: 50px;
- background: transparent;
- border: 2px solid #171717;
- box-sizing: border-box;
- box-shadow: 0px 0px 20px rgba(0, 178, 255, 0.5);
- border-radius: 35px;
- font-family: 'Geometria Medium';
- font-size: 20px;
- color: #171717;
- margin-left: 28px;
+   width: 240px;
+   height: 50px;
+   background: transparent;
+   border: 2px solid #171717;
+   box-sizing: border-box;
+   border-radius: 35px;
+   font-family: 'Geometria Medium';
+   color: #171717;
+   margin-left: 28px;
+}
+
+#header__send__button:hover {
+  border: 2px solid #00B2FF;
+  color: #00B2FF;
 }
 
 /* END HEADER */
@@ -291,7 +295,7 @@ button, input {
 .town__button__petersburg {
  position: absolute;
  top: 0;
- left: 35%;
+ left: 37%;
  z-index: -1;
 }
 
