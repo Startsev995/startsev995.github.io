@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+  <title>Сила жизни</title>
+</head>
+<body>
+  <div class="body__wrapper">
+    <!-- FORM PRODUCTS AND FORM ORDER  START -->
+    <div class="background-black" id="3">
+      <div class="form__card-product">
+        <img src="img/svg/close.svg" alt="close" class="form_close">
+        <div class="form__card-product__wrapper">
+          <div class="form__card-product_image">
+            <div class="item-hit">
+              <p class="item-hit-text">
+                Хит
+              </p>
+            </div>
+            <div class="catalog__item-hit__wrapper">
+              <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+          </div>
+        </div>
+        <div class="form__card-product_about-product">
+          <h2 class="catalog_heading_text">
+            Иван-чай листовой<br>
+            с клюквой
+          </h2>
+          <p class="form_text">
+            <span class="form_text-bold">
+              Год сбора:
+            </span>
+            2019
+          </p>
+          <p class="form_text">
+            <span class="form_text-bold">
+              Срок хранения:
+            </span>
+            2 года
+          </p>
+          <p class="form_text">
+            <span class="form_text-bold">
+              Вес:
+            </span>
+            100 гр.
+          </p>
+          <p class="form_text">
+            <span class="form_text-bold">
+              Полезные свойства:
+            </span>
+            повышает аппетит, улучшает работу миокарда и
+            пищеварительной системы, устраняет усталость, укрепляет сосуды,
+            лечит инфекции почек
+          </p>
+          <p class="form_text">
+            <span class="form_text-bold">
+              Противопоказания:
+            </span>
+            индвидуальная непереносимость.
+            С осторожностью при тромбозах и тромоблебите
+          </p>
+          <div class="form__card-product_about_price-button">
+            <div class="form__card-product_about_price">
+              <h4 class="item_price">
+                <span class="item_price-sm">
+                  Цена:
+                </span>
+                150
+              </h4>
+            </div>
+            <div class="form__card-product_about_quantity">
+              <button type="button" class="quantity" onclick="this.nextElementSibling.stepDown()">-</button>
+              <input type="number" min="0" max="100" value="1" readonly class="raz">
+              <button type="button" class="quantity" onclick="this.previousElementSibling.stepUp()">+</button>
+            </div>
+            <button type="button" class="card-product_btn">Купить</button>
+          </div>
+        </div>
+      </div>
+      <div class="form__order">
+        <div class="form__order_heading-text">
+          <p class="form_text">
+            <span class="form_text-color">
+              Минимальная сумма заказа - 1 000 р
+            </span>
+          </p>
+          <p class="form_text">
+            Заполните форму ниже, и позже мы с вами
+            свяжемся для дальнейшего обсуждения заказа
+          </p>
+        </div>
+        <form class="order" action="#">
+          <input type="text" placeholder="Ваше имя" class="order_input" >
+          <input type="text" placeholder="Номер телефона" class="order_input">
+        </form>
+        <button type="button" class="order_button">Отправить</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- FORM PRODUCTS AND FORM ORDER  END -->
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="block__header">
+          <div class="header__logo__menu">
+            <a href="index.html" class="header__logo">
+              <img src="img/logo.png" alt="Сила жизни">
+            </a>
+            <menu class="menu">
+              <ul class="menu__list">
+                <li>
+                  <a href="#catalog" class="menu__list__item item-first">Каталог</a>
+                </li>
+                <li>
+                  <a href="#slider" class="menu__list__item">О продукции</a>
+                </li>
+                <li>
+                  <a href="#section__about-production" class="menu__list__item">Производство</a>
+                </li>
+                <li>
+                  <a href="#about-company" class="menu__list__item">О нас</a>
+                </li>
+                <li>
+                  <a href="#where-by-products" class="menu__list__item">Где купить</a>
+                </li>
+              </ul>
+            </menu>
+          </div>
+          <div class="header_phone">
+            <p class="header_phone_text">
+              Телефон для заказов
+            </p>
+            <a href="tel:8 (8212) 72-70-18" class="phone header_phone">
+              8 (8212) 72-70-18
+            </a>
+          </div>
+        </div>
+        <h1 class="header__main__text">
+          Натуральные
+          продукты
+          Республики Коми
+        </h1>
+        <a href="#catalog">
+          <button type="button" class="header__btn">
+            Перейти в каталог
+          </button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="background-gradient">
+        <div class="leafs"></div>
+        <div class="cup"></div>
+        <div class="wrapper main__wrapper wrapper-catalog">
+          <section class="catalog" id="catalog">
+            <div class="wrapper catalog__wrapper">
+              <h2 class="heading_text heading_text-durk">
+                Каталог продукции
+              </h2>
+              <div class="catalog__filter">
+                <button type="button" class="main_button catalog_btn active" data-class=".catalog__list-tea" catalog_btn>Чаи (<span id="catalog__list_number-tea"></span>)</button>
+                <button type="button" class="main_button catalog_btn" data-class=".catalog__list-yagody">Ягоды (<span id="catalog__list_number-yagody"></span>)</button>
+                <button type="button" class="main_button catalog_btn" data-class=".catalog__list-chaga">Чага (<span id="catalog__list_number-chaga"></span>)</button>
+                <button type="button" class="main_button catalog_btn" data-class=".catalog__list-herbs">Травы (<span id="catalog__list_number-herbs"></span>)</button>
+                <button type="button" class="main_button catalog_btn" data-class=".catalog__list-sets">Наборы (<span id="catalog__list_number-sets"></span>)</button>
+              </div>
+              <div class="catalog__list catalog__list-tea catalog__list-active">
+                <div class="catalog__item catalog__item-tea catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button" class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/VIY7xOMv5r0.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с цветочками (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button" class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с клюквой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button" class="catalog__item_btn" data-id="#3">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button"class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea">
+                  <img src="products/VIY7xOMv5r0.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с цветочками (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea">
+                  <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с земляникой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea">
+                  <img src="products/VIY7xOMv5r0.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с цветочками (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-tea">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__list catalog__list-yagody">
+                <div class="catalog__item catalog__item-yagody catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button"class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-yagody">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__list catalog__list-chaga">
+                <div class="catalog__item catalog__item-chaga catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button"class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-chaga">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__list catalog__list-herbs">
+                <div class="catalog__item catalog__item-herbs catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button"class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-herbs">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__list catalog__list-sets">
+                <div class="catalog__item catalog__item-sets catalog__item-hit">
+                  <div class="item-hit">
+                    <p class="item-hit-text">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__item-hit__wrapper">
+                    <img src="products/cJmUEaOSxfk.jpg" alt="Иван-чай">
+                    <div class="catalog__item_text">
+                      <h3 class="catalog_heading_text">
+                        Иван-чай с земляникой (100 гр)
+                      </h3>
+                    </div>
+                    <div class="catalog__item_price">
+                      <h4 class="item_price">
+                        150
+                      </h4>
+                      <button type="button"class="catalog__item_btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog__item-sets">
+                  <img src="products/YSUtYlQGo8Q.jpg" alt="Иван-чай">
+                  <div class="catalog__item_text">
+                    <h3 class="catalog_heading_text">
+                      Иван-чай с клюквой (100 гр)
+                    </h3>
+                  </div>
+                  <div class="catalog__item_price">
+                    <h4 class="item_price">
+                      150
+                    </h4>
+                    <button type="button"class="catalog__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+            <button type="button" class="main_button catalog__filter_btn" id="filter_btn-show-all">Показать все</button>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper main__wrapper slider-box__wrapper">
+        <article class="slider-text" id="slider">
+          <div class="slider__list-text">
+            <div class="slider-box_text">
+              <h2 class="heading_text heading_text-color">
+                <span class="number slider-box_text_number">01/03</span>
+                Иван-чай с чагой
+              </h2>
+              <p>
+                Чага - вид грибов рода Инонотус отдела Базидиомицеты.
+                Стерильная форма гриба имеет название ча́га, или берёзовый
+                гриб. Чаще всего встречается на берёзах, отчего и получил
+                народное название «чёрный берёзовый гриб».
+                <br>
+                <br>
+                Повышает защитные силы организма, тонизирует;
+                стимулирует центральную нервную и нейрогуморальную
+                системы организма, снимает нервное напряжение;
+                улучшает обмен веществ; регулирует деятельность
+                сердечно-сосудистой и дыхательной систем; стимулирует
+                кроветворение (повышая уровень лейкоцитов); сокращают
+                холестерин в крови; обладает противоинфекционными
+                и противовоспалительными свойствами.
+                <br>
+                <br>
+                <span class="text-bold">Противопоказания:</span> индвидуальная непереносимость. С
+                осторожностью при тромбозах и тромоблебите
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="slider-box_text">
+              <h2 class="heading_text heading_text-color">
+                <span class="number slider-box_text_number">02/03</span>
+                Иван-чай с чагой
+              </h2>
+              <p>
+                Чага - вид грибов рода Инонотус отдела Базидиомицеты.
+                Стерильная форма гриба имеет название ча́га, или берёзовый
+                гриб. Чаще всего встречается на берёзах, отчего и получил
+                народное название «чёрный берёзовый гриб».
+                <br>
+                <br>
+                Противопоказания: индвидуальная непереносимость. С
+                осторожностью при тромбозах и тромоблебите
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="slider-box_text">
+              <h2 class="heading_text heading_text-color">
+                <span class="number slider-box_text_number">03/03</span>
+                Иван-чай с чагой
+              </h2>
+              <p>
+                Чага - вид грибов рода Инонотус отдела Базидиомицеты.
+                Стерильная форма гриба имеет название ча́га, или берёзовый
+                гриб. Чаще всего встречается на берёзах, отчего и получил
+                народное название «чёрный берёзовый гриб».
+                <br>
+                <br>
+                Повышает защитные силы организма, тонизирует;
+                стимулирует центральную нервную и нейрогуморальную
+                системы организма, снимает нервное напряжение;
+                улучшает обмен веществ; регулирует деятельность
+                сердечно-сосудистой и дыхательной систем; стимулирует
+                кроветворение (повышая уровень лейкоцитов); сокращают
+                холестерин в крови; обладает противоинфекционными
+                и противовоспалительными свойствами.
+              </p>
+            </div>
+            </div>
+            <div class="slider-box_button">
+              <button type="button" class="second_button slider-box_btn-product">Перейти к товару</button>
+              <button type="button" class="second_button slider-box_btn-buy">Купить</button>
+            </div>
+          </article>
+          <article class="slider-image">
+            <div class="slider__list">
+              <div>
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div>
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div>
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+              <div class="slider-opacity">
+                <img src="products/1.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider_button">
+              <button type="button" class="slider_btn slider_btn-prev"><img src="img/svg/Vector.svg" alt="Назад"></button>
+              <button type="button" class="slider_btn slider_btn-next"><img src="img/svg/Vector.svg" alt="Вперед"></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="background-gradient">
+        <div class="wrapper main__wrapper wrapper-about">
+          <section class="section__about-production technology" id="section__about-production">
+            <div class="wrapper catalog__wrapper">
+              <h2 class="heading_text heading_text-durk">
+                О производстве
+              </h2>
+              <button type="button" class="main_button about-production_btn about-production_btn-technology active">Технология</button>
+              <button type="button" class="main_button about-production_btn about-production_btn-certificate">Сертификаты</button>
+            </div>
+            <div class="wrapper about-production_wrapper">
+              <ol class="about-production__container-change">
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Сбор сырья
+                  </h5>
+                  <p class="conainer-change_text">
+                    Сбор иван чая и ягод производится в экологически чистых
+                    районах, удаленных на 300 км от ближайшего города и
+                    сохранивших девственную природу, - Усть-Куломском и
+                    Корткеросском.
+                  </p>
+                </li>
+                  <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Переработка сырья
+                  </h5>
+                  <p class="conainer-change_text">
+                    Осуществляется в п. Аджером, расположенном в 53 км от Сыктывкара,
+                    в красивейшем и чистом сосновом бору рядом с озером . В 2019 г.
+                    здесь был построен новый цех, работающий круглосуточно и способный
+                    перерабатывать 400 кг сырья в день. Мы заботимся о чистоте на
+                    производстве: все работники одеты в спецодежду, одноразовые
+                    шапочки, перчатки, сменную обувь.
+                  </p>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Проверка качества листьев и ягод
+                  </h5>
+                  <p class="conainer-change_text">
+                    Вы можете быть уверены в том, что к Вам на стол
+                    попадает только лучшее.
+                  </p>
+                  <video src="video/IVA_1740.mp4" controls poster="video/image1.jpg" class="about-production__item_video"></video>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Завяливания листочков
+                  </h5>
+                  <p class="conainer-change_text">
+                    Процесс завяливания листочков растения требуется, чтобы дальше
+                    из кипрея более легко выделялся межклеточный сок. Процесс
+                    происходит при определенной температуре, влажности и длится до
+                    3 часов. Главная цель данного этапа заключается в том, что готовые
+                    листочки должны хорошо гнуться, но не ломаться под давлением.
+                  </p>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Выделение сока или переработка
+                    в листовой или гранулированный чай
+                  </h5>
+                  <p class="conainer-change_text">
+                  </p>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                     Ферментация
+                  </h5>
+                  <p class="conainer-change_text">
+                    Очень важный этап, от которого зависят вкус и полезные свойства
+                    конечного продукта. Время, равно как и Температура и время
+                    данного этапа напрямую влияют на вкус, аромат и цвет будущего
+                    напитка
+                  </p>
+                  <video src="video/IVA_1738.mp4" controls poster="video/image2.jpg" class="about-production__item_video"></video>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                    Сушка чая
+                  </h5>
+                  <p class="conainer-change_text">
+                    Сушка чая происходит с помощью специальных современных
+                    сушилках. Этот процесс достаточно деликатный. От него во многом
+                    зависит качество будущего чая
+                  </p>
+                </li>
+                <li class="about-production__item">
+                  <h5 class="conainer-change_heading-text">
+                     Фасовка чая
+                  </h5>
+                  <p class="conainer-change_text">
+                    После сушки чай попадает на склад для дальнейшей фасовки. У нас
+                    Вы можете приобрести чай в крафтовой, картонной, стеклянной
+                    упаковках и берестяных туясках.
+                    Каждый этап производства нашего
+                    чая сопровождается контролем качества. В каждом помещении
+                    имеются видеокамеры.
+                  </p>
+                  <video src="video/IVA_1792.mp4" controls poster="video/image3.jpg" class="about-production__item_video"></video>
+                </li>
+              </ol>
+              <div class="about-production_PS">
+                <div class="about-production_PS_image">
+                  <img src="img/award.png" alt="сертифицирована">
+                </div>
+                <div class="about-production_PS_image">
+                  <img src="img/r.png" alt="25 витаминов">
+                </div>
+                <div class="about-production_PS_text">
+                  <p>
+                    Вся продукция сертифицирована
+                    и подтверждена Институтом
+                    Биологии Республики Коми
+                </p>
+                </div>
+                <div class="about-production_PS_text">
+                  <p>
+                    Официально в нашей продукции
+                    найдены 25 витаминов
+                    и полезных веществ!
+                  </p>
+                </div>
+              </div>
+              <div class="flower flower-1"></div>
+              <div class="flower flower-2"></div>
+            </div>
+          </section>
+
+          <section class="section__about-production certificate" id="section__about-production">
+            <div class="wrapper catalog__wrapper">
+              <h2 class="heading_text heading_text-durk">
+                О производстве
+              </h2>
+              <button type="button" class="main_button about-production_btn about-production_btn-technology">Технология</button>
+              <button type="button" class="main_button about-production_btn about-production_btn-certificate active">Сертификаты</button>
+            </div>
+            <div class="wrapper certificate_wrapper">
+              <div class="about-production__container-change">
+                <div class="certificate__item">
+                  <div class="certificate__item_image">
+                    <img src="img/certificate/certificate1.png" alt="">
+                    <div class="certificate__item_image_block"></div>
+                  </div>
+                  <div class="certificate__item_text">
+                    <h5 class="conainer-change_heading-text">
+                      Протокол исследования №1
+                    </h5>
+                    <p class="conainer-change_heading-text_title">
+                      Водорастворимой фракции экстрактивных веществ
+                      ферментированного иван-чая физико-химическими
+                      методами
+                    </p>
+                    <p class="conainer-change_text conainer-change_text-certificate">
+                      ФАПО России Институт биологии Коми Научного центра
+                      Уральского отделения Российской академии наук
+                      <br>
+                      <br>
+                      28.02.2018
+                    </p>
+                    <button type="button" class="certificate__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="certificate__item">
+                  <div class="certificate__item_image">
+                    <img src="img/certificate/certificate2.png" alt="">
+                    <div class="certificate__item_image_block"></div>
+                  </div>
+                  <div class="certificate__item_text">
+                    <h5 class="conainer-change_heading-text">
+                      Евразийский экономический союз
+                    </h5>
+                    <p class="conainer-change_heading-text_title">
+                      Декларация о соответствии
+                    </p>
+                    <p class="conainer-change_text conainer-change_text-certificate">
+                      Испытательная лаборатория Федерального
+                      бюджетного учрежденя “Государственный региональный
+                      центр стандартизации, метрологии и испытаний
+                      в Республике Коми”
+                      <br>
+                      <br>
+                      28.02.2019
+                    </p>
+                    <button type="button" class="certificate__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="certificate__item">
+                  <div class="certificate__item_image">
+                    <img src="img/certificate/certificate3.png" alt="">
+                    <div class="certificate__item_image_block"></div>
+                  </div>
+                  <div class="certificate__item_text">
+                    <h5 class="conainer-change_heading-text">
+                      Протокол лабораторных<br>
+                      испытаний №374
+                    </h5>
+                    <p class="conainer-change_heading-text_title">
+                      Ассорти из сухих трав “Иваныч”
+                      (плодоножки морошки)
+                    </p>
+                    <p class="conainer-change_text conainer-change_text-certificate">
+                      Росстандарт<br>
+                      ФБУ “Коми ЦСМ”
+                      <br>
+                      <br>
+                      03.04.2019
+                    </p>
+                    <button type="button" class="certificate__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="certificate__item">
+                  <div class="certificate__item_image">
+                    <img src="img/certificate/certificate4.png" alt="">
+                    <div class="certificate__item_image_block"></div>
+                  </div>
+                  <div class="certificate__item_text">
+                    <h5 class="conainer-change_heading-text">
+                      Протокол лабораторных<br>
+                      испытаний №484
+                    </h5>
+                    <p class="conainer-change_heading-text_title">
+                      Листья малины (высушенные)
+                    </p>
+                    <p class="conainer-change_text conainer-change_text-certificate">
+                      Росстандарт<br>
+                      ФБУ “Коми ЦСМ”
+                      <br>
+                      <br>
+                      17.04.2019
+                    </p>
+                    <button type="button" class="certificate__item_btn">Подробнее</button>
+                  </div>
+                </div>
+                <div class="certificate__item">
+                  <div class="certificate__item_image">
+                    <img src="img/certificate/certificate5.png" alt="">
+                    <div class="certificate__item_image_block"></div>
+                  </div>
+                  <div class="certificate__item_text">
+                    <h5 class="conainer-change_heading-text">
+                      Евразийский экономический союз
+                    </h5>
+                    <p class="conainer-change_heading-text_title">
+                      Декларация о соответствии
+                    </p>
+                    <p class="conainer-change_text conainer-change_text-certificate">
+                      Испытательная лаборатория Федерального
+                      бюджетного учрежденя “Государственный региональный
+                      центр стандартизации, метрологии и испытаний
+                      в Республике Коми”
+                      <br>
+                      <br>
+                      28.08.2019
+                    </p>
+                    <button type="button" class="certificate__item_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+
+      <div class="wrapper main__wrapper">
+      <section class="about-company" id="about-company">
+        <h2 class="heading_text heading_text-durk">
+          О компании
+        </h2>
+        <div class="about-company_text">
+          <div>
+            <p>
+              На рынке 3 - года, иван чай собираем и ягоды в 2- х ра-х
+              Корткеросском и Усть - Куломском, в далеке от цивилизации, в
+              экологически чистых ра-х.
+              Отличие нашего сырья - до 300 -км до
+              ближайшего города, где сохранилась "девственная" природу. Сама
+              переработка осуществляется в п. Аджером Корткеросского р-на
+              в 53 км от Сыктывкара , в красивейшем месте - рядом с озером.
+              <br>
+              <br>
+              Аджером нахоиться в сосновом бору. Новый цех построили 2019 г,
+              в летний период - работает 24 часа в сутки, в день перерабатывем
+              около 400 кг сырой массы.
+              <br>
+              <br>
+              Все работники одеты в спецодежду, одноразовые шапочки,
+              перчатки, сменная обувь.Отдельная столовая, все удобства в здании.
+            </p>
+          </div>
+          <div>
+            <p>
+              Изначально чай проверяется по качеству листьев и ягод, далее в
+              отдельном помещении проходит завяливание до 3 ч, при
+              определённой температуре и влажности, после этого переработка
+              или в листовой или в гранулированный, в отдельном помещении
+              происодит ферментирование, далее в моны и современны сушилках
+              при нужной тем-ре - получаем готовый чай. На каждом этапе
+              проходит контроль качества. Далее попадает на склад, в отдельном
+              помещении - фасовка чая.
+              <br>
+              <br>
+              В каждом помещении имеются видеокамеры. Мы отвечаем за
+              качество продукции "ОЛӧМ ВЫН". Вся продукция сертифицирована
+              и подтверждена Институтом Биологии РК - официально в нашей
+              продукции найдены 25 витаминов и полезных веществ!
+            </p>
+          </div>
+        </div>
+        <div class="about-company_image">
+          <img src="img/image-2.4.jpg" alt="image 2.4">
+          <img src="img/image-3.jpg" alt="image 3">
+          <img src="img/image-4.jpg" alt="image 4">
+        </div>
+      </section>
+      <section class="where-by-products" id="where-by-products">
+        <h2 class="heading_text heading_text-durk heading_text-where-by-products">
+          Где купить нашу продукцию
+        </h2>
+        <div class="filter_map">
+          <button type="button" class="second_button filter__map_btn syktyvkar active">Сыктывкар</button>
+          <button type="button" class="second_button filter__map_btn vorkuta">Воркута</button>
+          <button type="button" class="second_button filter__map_btn pechora">Печора</button>
+          <button type="button" class="second_button filter__map_btn usinsk">Усинск</button>
+          <button type="button" class="second_button filter__map_btn uhta">Ухта</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl piter">Санкт-Петербург</button>
+          <button type="button" class="second_button filter__map_btn mikun">Микунь</button>
+
+          <button type="button" class="second_button filter__map_btn ijem">Ижемский р-н</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl kulom">Усть-Куломский р-н</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl vimsk">Усть-Вымский р-н</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl cilemsk">Усть-Цилемский р-н</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl priluz">Прилузский р-н</button>
+          <button type="button" class="second_button filter__map_btn filter__map_btn-xl korkeros">Корткеросский р-н</button>
+
+        </div>
+      </section>
+    </div>
+    <aside class="change__address">
+      <div class="wrapper">
+        <div class="address">
+          <ol class="change__address__list">
+            <li class="change__address__item">
+              <a href="#" class="change__address__sub-a">
+                Магазин “Коми сувениры”
+              </a>
+              <ul class="change__address__list_item">
+                <li class="change__address__list_item_text">
+                  г. Сыктывкар, ул. Первомайская, 125
+                  <br>
+                  <br>
+                  Телефон для справок 23-56-78<br>
+                  Режим работы: Пн-Пт 10.00-18.00<br>
+                  Суббота 10.00-16.00 Воскресенье - выходной<br>
+                </li>
+              </ul>
+            </li>
+            <li class="change__address__item">
+              <a href="#" class="change__address__sub-a">
+                “Эколавка”
+              </a>
+              <ul class="change__address__list_item">
+                <li class="change__address__list_item_text">
+                </li>
+              </ul>
+            </li>
+            <li class="change__address__item">
+              <a href="#" class="change__address__sub-a">
+                Сыктывкарский ЦУМ
+              </a>
+              <ul class="change__address__list_item">
+                <li class="change__address__list_item_text">
+                </li>
+              </ul>
+            </li>
+            <li class="change__address__item">
+              <a href="#" class="change__address__sub-a">
+                Гостинница Югор
+              </a>
+              <ul class="change__address__list_item">
+                <li class="change__address__list_item_text">
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <div class="map" id="map">
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="wrapper main__wrapper">
+      <div class="footer-up">
+        <div class="footer_requisites">
+          <p class="footer_text-heading">
+            Реквизиты:
+          </p>
+          <p class="footer_text">
+            <span class="requisites_text">ООО</span> 6451128621645112862
+          </p>
+          <p class="footer_text">
+            <span class="requisites_text">ИНН</span> 6451128621
+          </p>
+          <p class="footer_text">
+            <span class="requisites_text">ОГРН</span> 645112862164511
+          </p>
+        </div>
+        <div class="footer_contacs">
+          <p class="footer_text-heading">
+            Телефон для заказов:
+          </p>
+          <a href="tel:8 (8212) 72-70-18" class="phone footer_phone">
+            8 (8212) 72-70-18
+          </a>
+          <p class="footer_text">
+            E-mail:
+          </p>
+          <a href="mailto:silazhisni@yandex.ru" class="mail footer_mail">silazhisni@yandex.ru</a>
+          </a>
+        </div>
+        <div class="footer__address">
+          <div class="footer__address_social-networks">
+            <a href="" class="social-networks-image facebook"></a>
+            <a href="" class="social-networks-image instagram"></a>
+            <a href="http://vk.com/ivan_chai_komi" class="social-networks-image vk"></a>
+          </div>
+          <p class="footer_text-heading">
+            Адрес:
+          </p>
+          <p class="footer_text">
+            г. Сыктывкар,
+            ул. Первомайская, 27
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-down-background">
+      <div class="wrapper wrapper-footer">
+        <div class="footer-down">
+          <p class="footer-down_text">
+            © 2019 Сила жизни
+          </p>
+          <a href="http://pelicandesign.ru/" class="footer-down_text">
+            Pelican Creative Agency
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<script src="js/jquery.js"></script>
+<script src="slick/slick.min.js"></script>
+</body>
+</html>
